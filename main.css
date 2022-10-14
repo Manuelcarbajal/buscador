@@ -1,0 +1,142 @@
+html{
+    font-family: 'Oswald', sans-serif;
+    box-sizing:border-box;
+    font-size:62.5%
+}
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing:inherit;    
+}
+.start{
+     display:grid;
+     grid-template-rows: repeat(auto-fit,minmax(100px,1fr)) ;  
+     grid-template-columns:1fr 1fr 1fr ;
+     justify-items:center;
+    
+
+}
+.start-homepage {
+    margin-top:5em;   
+    align-items:center;
+    height:100vh;
+}
+/* Logo */
+
+.up-logo{
+    grid-column:2;
+    grid-row: 1;
+   
+}
+.up-logo img{
+    width:10rem;
+}
+
+/* Buscador */
+
+.search{
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.search p{
+    text-align: right;
+    font-size: 1.5em;
+    font-weight:500;
+    margin-top:15px;
+    margin-right:50px;
+    color:#585858;
+}
+.search input{
+    width:66vw;
+    height:8rem;
+    padding-left:0.75em;
+}
+.search input[type="text"]{
+   font-size: 2em;
+   font-weight:600;
+   border-radius: 100px;
+   color:#585858;
+   font-weight:600;
+   border:0px solid transparent;
+   box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
+}
+.search input[type="text"]:focus{
+   box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
+   outline:none;
+ }
+ .search input[type="text"]::placeholder{
+    text-transform: lowercase;
+    font-family: Arial, Helvetica, sans-serif,'Font Awesome\ 5 free';
+    font-weight:900;
+    
+    color:#a4a4a4;
+  }
+ 
+
+/*  */
+.recent-posts-wrapper{
+    grid-column:1/-1;
+    grid-row:3;
+}
+.recent-posts-heading{
+    color:#2660f3;
+    margin-bottom:3em;
+    font-size:1.4rem;
+}
+.recent-posts{
+    display:grid;
+    width:66vw;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-gap: 2.5rem;
+}
+
+.recent-post-title {
+    color:#999999;
+    font-size:1.5rem;
+}
+
+.recent-post-category {
+    color:#999999;
+    font-size:1.2rem;
+    font-weight:600;
+} 
+
+/* Results style */
+.Results-homepage{
+    margin-top: 3em;
+}
+
+.results-posts-wrapper{
+    grid-row:3;
+    grid-column:1/-1;
+    width:66vw;
+
+}
+.post{
+    margin-top:3em;
+    margin-bottom:5em;
+}
+.category-name {
+    color:#2660f3;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+.result-post-title a{
+    text-decoration:none;
+    font-size: 2em;
+}
+
+.results-links{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-gap: 2rem;
+    margin-top: 1.5em;
+}
+
+.result-link a{
+    color:#a4a4a4;
+    font-size:1.5em;
+    text-decoration:none;
+}
